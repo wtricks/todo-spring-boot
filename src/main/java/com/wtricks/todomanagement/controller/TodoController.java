@@ -1,4 +1,4 @@
-package net.guides.springboot.todomanagement.controller;
+package com.wtricks.todomanagement.controller;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -18,8 +18,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import net.guides.springboot.todomanagement.model.Todo;
-import net.guides.springboot.todomanagement.service.ITodoService;
+import com.wtricks.todomanagement.model.Todo;
+import com.wtricks.todomanagement.service.ITodoService;
+
 
 @Controller
 public class TodoController {

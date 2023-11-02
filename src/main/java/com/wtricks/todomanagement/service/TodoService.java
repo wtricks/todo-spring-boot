@@ -1,4 +1,4 @@
-package net.guides.springboot.todomanagement.service;
+package com.wtricks.todomanagement.service;
 
 import java.util.Date;
 import java.util.List;
@@ -7,12 +7,11 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import net.guides.springboot.todomanagement.model.Todo;
-import net.guides.springboot.todomanagement.repository.TodoRepository;
+import com.wtricks.todomanagement.model.Todo;
+import com.wtricks.todomanagement.repository.TodoRepository;
 
 @Service
 public class TodoService implements ITodoService {
-
 	@Autowired
 	private TodoRepository todoRepository;
 
@@ -33,7 +32,14 @@ public class TodoService implements ITodoService {
 
 	@Override
 	public void addTodo(String name, String desc, Date targetDate, boolean isDone) {
-		todoRepository.save(new Todo(name, desc, targetDate, isDone));
+		Todo todo = Todo.builder()
+			.userName(name)
+			.description(desc)
+			.targetDate(targetDate)
+			.isDone(isDone)
+			.build();
+
+		todoRepository.save(todo);
 	}
 
 	@Override

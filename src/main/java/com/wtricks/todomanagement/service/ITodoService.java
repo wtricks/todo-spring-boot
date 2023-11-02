@@ -1,11 +1,12 @@
-package net.guides.springboot.todomanagement.service;
+package com.wtricks.todomanagement.service;
 
 import java.util.Date;
 
 import java.util.List;
 import java.util.Optional;
 
-import net.guides.springboot.todomanagement.model.Todo;
+import com.wtricks.todomanagement.model.Todo;
+
 
 public interface ITodoService {
 

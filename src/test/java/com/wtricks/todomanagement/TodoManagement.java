@@ -1,4 +1,4 @@
-package net.guides.todo.todomanagementspringboot2;
+package com.wtricks.todomanagement;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class TodoManagementSpringBoot2ApplicationTests {
+public class TodoManagement {
 
 	@Test
 	public void contextLoads() {
